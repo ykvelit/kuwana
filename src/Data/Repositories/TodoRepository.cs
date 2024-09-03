@@ -1,6 +1,5 @@
 ﻿using Domain;
 using Microsoft.EntityFrameworkCore;
-using MongoDB.Bson;
 using Ykvelit.Core.Exceptions;
 
 namespace Data.Repositories;
