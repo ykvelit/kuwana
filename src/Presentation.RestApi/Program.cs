@@ -33,7 +33,7 @@ builder.Services.AddRootModule(builder.Configuration);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(options =>
 {
-    options.CustomSchemaIds(x => x.FullName);
+    options.CustomSchemaIds(x => x.FullName!.Replace("+","."));
 });
 
 builder.Services.AddCors(options =>
